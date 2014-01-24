@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>example</title>
+</head>
+<body>
+
+
+    <input type="text" id="txtInp" style="position:absolute;left:200px;top:200px;" />
+
+
+<script src="acControl.js" type="text/javascript"></script>
+<script type="text/javascript">
+var wordList = [
+    'Tokyo',
+    'Tel Aviv',
+    'Seoul',
+    'New York',
+    'Sao Paulo',
+    'Bombay',
+    'Delhi',
+    'Shanghai',
+    'Los Angeles',
+    'Osaka',
+    'Jakarta',
+    'Calcutta',
+    'Cairo',
+    'Manila',
+    'Karachi',
+    'Moscow',
+    'Buenos Aires',
+    'Dhaka',
+    'Rio de Janeiro',
+    'Beijing',
+    'London',
+    'Tehran',
+    'Istanbul',
+    'Lagos',
+    'Shenzhen',
+    'Paris',
+    'Chicago'
+];
+
+var ac = new autocomplete(document.getElementById('txtInp'), wordList, { locateunder:false, casesensitive:true, highlight:false } );
+ac.setHeight(150);
+
+</script>
+</body>
+</html>
